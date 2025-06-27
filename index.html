@@ -2,55 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QuratulAin Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="toggle-container">
+    <button id="toggle-mode">🌙 Dark Mode</button>
+    <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
+  </div>
+
   <div class="container">
     <header>
-      <h1>Hi there, I'm QuratulAin 👋</h1>
-      <p>Welcome to my portfolio site!</p>
+      <h1>Hi, I'm Quratul Ain 👩‍💻</h1>
+      <p>Certified Data Scientist & Machine Learning Engineer (NLP Specialist)</p>
     </header>
 
-    <section class="about">
-      <h2>About Me</h2>
+    <section class="intro">
       <p>
-        🎓 I’m currently pursuing BS Software Engineering at Mehran University of Engineering and Technology.
-        <br />
-        👀 I’m interested in Web Development, Android Development, and AI & Data Science.
-        <br />
-        🌱 I’m currently learning front-end web development.
-        <br />
-        💬 Ask me about: C++, Python, HTML, CSS, JS, Bootstrap.
-        <br />
-        📫 How to reach me:
-        <a href="mailto:quratulainbashir205@gmail.com">quratulainbashir205@gmail.com</a>
+        Experienced in developing ML models from scratch and fine-tuning pre-trained algorithms.
+        Passionate about building AI-driven solutions that solve complex real-world challenges.
       </p>
     </section>
 
+    <section class="education">
+      <h2>🎓 Education</h2>
+      <p><strong>BSc in Statistics</strong></p>
+    </section>
+
+    <section class="internship">
+      <h2>🧪 Internship</h2>
+      <p>
+        Recently completed a 25-day internship in <strong>Generative AI</strong> at Guftugu Publication,
+        supervised by SkilledScore.
+      </p>
+    </section>
+
+    <section class="certifications">
+      <h2>📜 Certifications</h2>
+      <ul>
+        <li>Generative AI with LangChain and Hugging Face (Udemy)</li>
+        <li>Data Science ML/DL/NLP Bootcamp (Udemy)</li>
+        <li>MLOps – In Progress (Udemy)</li>
+      </ul>
+    </section>
+
+    <section class="expertise">
+      <h2>🚀 Expertise & Experience</h2>
+      <ul>
+        <li>ETL Pipelines and MLOps Deployment</li>
+        <li>ML Systems: Recommender Engines, Anomaly Detection, Classifiers</li>
+        <li>LLM Development with LangChain and LangGraph</li>
+        <li>AI Agents using CrewAI & LangGraph</li>
+        <li>Cloud (AWS) and Scalable ML Deployments</li>
+        <li>Application Development: Streamlit, Flask</li>
+        <li>Currently Learning: MLOps for production-ready AI systems</li>
+      </ul>
+    </section>
+
     <section class="skills">
-      <h2>Languages and Tools</h2>
-      <div class="skills-grid">
-        <span>⚙️ C++</span>
-        <span>⚙️ Python</span>
-        <span>⚙️ HTML</span>
-        <span>⚙️ CSS</span>
-        <span>⚙️ JavaScript</span>
-        <span>⚙️ Bootstrap</span>
-        <span>⚙️ MySQL</span>
+      <h2>🛠️ Technical Skills</h2>
+      <ul>
+        <li><strong>Languages/Frameworks:</strong> Python, PyTorch, Scikit-learn, LangChain, CrewAI, AWS, Streamlit, Flask</li>
+        <li><strong>ML/DL:</strong> Supervised/Unsupervised Learning, NLP Pipelines, Anomaly Detection, Recommender Systems</li>
+        <li><strong>LLM & GenAI:</strong> RAG, GPT fine-tuning, embedding models, structured & unstructured data handling</li>
+        <li><strong>Dev Practices:</strong> Modular coding, Jupyter to Prod, Real-world AI Deployment</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>📁 Projects</h2>
+      <div class="project-grid">
+        <div class="card"><h3>AI Cover Letter Generator</h3><a href="#">View Project</a></div>
+        <div class="card"><h3>Fine-tune GPT-2 on Legal Documents</h3><a href="#">View Project</a></div>
+        <div class="card"><h3>Multi-Turn Chatbot</h3><a href="#">View Project</a></div>
+        <div class="card"><h3>Stable Diffusion Image Generator</h3><a href="#">View Project</a></div>
+        <div class="card"><h3>🍏 Nutrition Assistant</h3><a href="#">View Project</a></div>
+        <div class="card"><h3>🤖 Hybrid AI Chatbot</h3><a href="#">View Project</a></div>
+        <div class="card"><h3>🌡️ LSTM Temperature Prediction</h3><a href="#">View Project</a></div>
+        <div class="card"><h3>📧 Spam & Ham Classifier</h3><a href="#">View Project</a></div>
       </div>
     </section>
 
-    <section class="links">
-      <h2>Connect with Me</h2>
-      <a href="https://www.linkedin.com/in/quratulain-bashir-873503266/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/QuratulAin20" target="_blank">GitHub</a>
+    <section class="contact">
+      <h2>📫 Get in Touch</h2>
+      <p>Email: <a href="mailto:qurat-zee@hotmail.com">qurat-zee@hotmail.com</a></p>
+      <p>
+        <a href="https://github.com/QuratulAin20" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/quratulain-bashir-873503266/" target="_blank">LinkedIn</a>
+      </p>
     </section>
 
     <footer>
-      <p>© 2025 QuratulAin. Built with 💻 and ❤️</p>
+      <p>© 2025 QuratulAin. Built with 💻 and 💡</p>
     </footer>
   </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-mode');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  </script>
 </body>
 </html>
