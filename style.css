@@ -1,3 +1,4 @@
+
 /* General Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -190,8 +191,3 @@ iframe {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-
-.dark-mode .resume-btn {
-  background-color: #2299ee;
-}
-
